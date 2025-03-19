@@ -1,0 +1,187 @@
+/* General styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  body {
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .swapify-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 380px;
+  }
+  
+  /* Logo styles */
+  .logo-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .logo-circle {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #3ebfbf;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .logo-circle::before {
+    content: "";
+    position: absolute;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    border: 6px solid #f0f0f0;
+    top: -6px;
+    right: -6px;
+  }
+  
+  .inner-circle {
+    width: 12px;
+    height: 12px;
+    background-color: #f0f0f0;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 12px;
+    right: 12px;
+  }
+  
+  .logo-text {
+    color: #3ebfbf;
+    font-size: 32px;
+    font-weight: normal;
+    font-style: italic;
+    margin-top: 8px;
+  }
+  
+  /* Login card styles */
+  .login-card {
+    background-color: #a7dfeb;
+    width: 100%;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .login-title {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 5px;
+  }
+  
+  .login-subtitle {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 20px;
+  }
+  
+  /* Form styles */
+  .input-field {
+    margin-bottom: 12px;
+  }
+  
+  .input-field input {
+    width: 100%;
+    padding: 12px;
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+    background-color: #f5f5dc;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+  }
+  
+  .input-field input::placeholder {
+    color: #999;
+  }
+  
+  /* Social login buttons */
+  .social-login {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px auto;
+    width: 70%;
+  }
+  
+  .social-btn {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+    background-color: #f5f5dc;
+    color: #333;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+  }
+  
+  .x-btn {
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .google-btn {
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .facebook-btn {
+    font-family: 'Arial', sans-serif;
+  }
+  
+  /* Login button */
+  .login-btn {
+    display: block;
+    width: 60%;
+    margin: 0 auto;
+    padding: 10px;
+    background-color: #f5f5dc;
+    color: #333;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Forgot password link */
+  .forgot-password {
+    font-size: 12px;
+    color: #333;
+    text-align: center;
+    margin-top: 15px;
+  }
+  
+  .forgot-password a {
+    color: #333;
+    text-decoration: none;
+  }
+
+  .register-link {
+    font-size: 12px;
+    color: #333;
+    text-align: center;
+    margin-top: 15px;
+  }
+  
+  .register-link a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+  }
