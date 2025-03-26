@@ -7,7 +7,7 @@
   }
   
   body {
-    background-color: #f0f0f0;
+    background-color: #F1F2E4;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -20,6 +20,7 @@
     align-items: center;
     width: 100%;
     max-width: 380px;
+  
   }
   
   /* Logo styles */
@@ -74,9 +75,9 @@
   .register-card {
     background-color: #a7dfeb;
     width: 100%;
-    border-radius: 10px;
     padding: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: solid 3px black;
+    box-shadow: 5px 8px 12px rgba(0, 0, 0, 1);
   }
   
   .register-title {
@@ -101,6 +102,7 @@
     padding: 12px;
     font-size: 14px;
     border: none;
+    color: gray;
     border-radius: 5px;
     background-color: #f5f5dc;
     box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
@@ -141,7 +143,7 @@
     font-family: 'Arial', sans-serif;
   }
   
-  .facebook-btn {
+  .discord-btn {
     font-family: 'Arial', sans-serif;
   }
   

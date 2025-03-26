@@ -1,0 +1,84 @@
+/* Se mantienen los estilos generales del Login.css */
+
+.home-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.quick-actions {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    width: 100%;
+    margin: 20px 0;
+}
+
+.quick-action-btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #f5f5dc;
+    border: solid 1px black;
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 1);
+    padding: 15px;
+    text-decoration: none;
+    color: #333;
+    transition: transform 0.2s;
+}
+
+.quick-action-btn:hover {
+    transform: scale(1.05);
+}
+
+.action-icon {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.action-title {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.home-stats {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 20px 0;
+}
+
+.stat-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f5f5dc;
+    border: solid 1px black;
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 1);
+    padding: 10px;
+    width: 45%;
+}
+
+.stat-label {
+    font-size: 12px;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+.stat-value {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
+
+.home-actions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.settings-link {
+    margin-top: 15px;
+}

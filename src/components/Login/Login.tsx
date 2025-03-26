@@ -1,8 +1,9 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import './Login.css';
 
 const Login: React.FC = () => {
+
   const [formData, setFormData] = useState({
     email: '',
     password: ''
@@ -22,6 +23,10 @@ const Login: React.FC = () => {
     // Aquí iría la lógica para autenticar al usuario
   };
 
+  useEffect(() => {
+    document.title = "Swapify - Iniciar sesión";
+  }, []);
+
   return (
     <div className="swapify-container">
       <div className="logo-container">
@@ -31,7 +36,7 @@ const Login: React.FC = () => {
         <h1 className="logo-text">swapify</h1>
       </div>
 
-      <div className="login-card">
+      <div className="login-card sombras">
         <h2 className="login-title">Bienvenido!</h2>
         <p className="login-subtitle">Inicia sesión para entrar</p>
 
@@ -65,8 +70,8 @@ const Login: React.FC = () => {
             <button type="button" className="social-btn google-btn">
               G
             </button>
-            <button type="button" className="social-btn facebook-btn">
-              f
+            <button type="button" className="social-btn discord-btn">
+              <img src='src\assets\discord.png' style={{width: "30px"}}></img>
             </button>
           </div>
 

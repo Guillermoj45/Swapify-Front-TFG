@@ -1,29 +1,33 @@
-import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
-import './Register.css';
+import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
+import "./Register.css";
 
 const Register: React.FC = () => {
   const [formData, setFormData] = useState({
-    nickname: '',
-    nombre: '',
-    email: '',
-    fechaNacimiento: '',
-    contrasena: ''
+    nickname: "",
+    nombre: "",
+    email: "",
+    fechaNacimiento: "",
+    contrasena: "",
   });
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const { name, value } = e.target;
-    setFormData(prevState => ({
+    setFormData((prevState) => ({
       ...prevState,
-      [name]: value
+      [name]: value,
     }));
   };
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    console.log('Form submitted:', formData);
+    console.log("Form submitted:", formData);
     // Aquí iría la lógica para enviar los datos al backend
   };
+
+  useEffect(() => {
+    document.title = "Swapify - Registrarse";
+  }, []);
 
   return (
     <div className="swapify-container">
@@ -36,7 +40,9 @@ const Register: React.FC = () => {
 
       <div className="register-card">
         <h2 className="register-title">Registrarse</h2>
-        <p className="register-subtitle">Rellena el formulario para registrarse</p>
+        <p className="register-subtitle">
+          Rellena el formulario para registrarse
+        </p>
 
         <form onSubmit={handleSubmit}>
           <div className="input-field">
@@ -101,8 +107,8 @@ const Register: React.FC = () => {
             <button type="button" className="social-btn google-btn">
               G
             </button>
-            <button type="button" className="social-btn facebook-btn">
-              f
+            <button type="button" className="social-btn discord-btn">
+              <img src="src\assets\discord.png" style={{ width: "30px" }}></img>
             </button>
           </div>
 
